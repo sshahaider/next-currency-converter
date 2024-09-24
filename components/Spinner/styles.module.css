@@ -1,0 +1,35 @@
+   .spinner .dot {
+     position: absolute;
+     inset: 0;
+     display: flex;
+     justify-content: center;
+   }
+
+   .spinner .dot::after {
+     width: 6px;
+     height: 4px;
+   }
+
+   @keyframes spin {
+     to {
+       transform: rotate(360deg);
+     }
+   }
+
+   .spinner .dot {
+     animation: spin 1.6s infinite;
+   }
+
+
+
+   .spinner .dot:nth-child(3) {
+     animation-delay: 100ms;
+   }
+
+   .spinner .dot:nth-child(4) {
+     animation-delay: 200ms;
+   }
+
+   .spinner .dot:nth-child(5) {
+     animation-delay: 300ms;
+   }
